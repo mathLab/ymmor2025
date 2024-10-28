@@ -2344,4 +2344,41 @@ a.back-to-top:hover, a.back-to-top:focus {
     #map {
         height: 300px;
     }
+
+.registration-form-wrapper {
+  background: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+/* Animation for collapse */
+.collapse {
+  transition: all 0.3s ease;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+/* Rest of the CSS remains the same */
+
+/* Adjust carousel caption positioning */
+.carousel-caption {
+  padding-bottom: 180px;  /* Increase bottom padding to move content up */
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding-bottom: 100px;  /* Less padding on mobile devices */
+  }
+}
 }
