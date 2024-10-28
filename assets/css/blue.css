@@ -1,0 +1,171 @@
+ /* Using a lighter blue palette */
+:root {
+    --primary-blue: #4FC3F7;      /* Light blue - main color */
+    --hover-blue: #29B6F6;        /* Slightly darker for hover states */
+    --light-blue: #81D4FA;        /* Very light blue for backgrounds */
+    --dark-blue: #039BE5;         /* Darker blue for contrast */
+  }
+  
+  a:hover {
+    color: var(--primary-blue);
+  }
+  
+  .section-title:before,
+  .section-sub:before {
+    background-color: var(--primary-blue);
+  }
+  
+  .slicknav_menu .slicknav_icon-bar {
+    background: var(--primary-blue);
+  }
+  
+  .slicknav_btn {
+    border-color: var(--primary-blue);
+  }
+  
+  .slicknav_nav a:hover, 
+  .slicknav_nav .active,
+  .slicknav_nav .dropdown li a.active {
+    color: var(--hover-blue);
+  }
+  
+  .navbar li.active a.nav-link {
+    color: #fff !important;
+    background: var(--primary-blue);
+  }
+  
+  .navbar-expand-lg .navbar-nav li a:hover,
+  .navbar-expand-lg .navbar-nav li .active>a,
+  .navbar-expand-lg .navbar-nav li a:focus {
+    color: var(--primary-blue);
+  }
+  
+  .dropdown .dropdown-item:focus,
+  .dropdown .dropdown-item:hover,
+  .dropdown .dropdown-item.active {
+    color: var(--primary-blue);
+    background-color: var(--light-blue);
+  }
+  
+  #hero-area .contents span.year {
+    color: var(--dark-blue);
+  }
+  
+  .btn-common {
+    background-color: var(--primary-blue);
+  }
+  
+  .btn-common:hover {
+    color: #fff;
+    background-color: var(--hover-blue);
+  }
+  
+  .btn-border:hover {
+    background-color: var(--primary-blue);
+  }
+  
+  .time-entry {
+    background: var(--primary-blue);
+  }
+  
+  .team-item .overlay-social-icon .social-icons li a i {
+    background: var(--primary-blue);
+  }
+  
+  .team-item .info-text h3 a:hover {
+    color: var(--hover-blue);
+  }
+  
+  .schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link,
+  .schedule .schedule-tab-title .nav-tabs .nav-link.active,
+  .schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+  }
+  
+  .services-item .services-content h3 a {
+    color: var(--dark-blue);
+  }
+  
+  .services-item .icon i {
+    border-color: var(--primary-blue);
+    background: var(--primary-blue);
+  }
+  
+  .services-item:hover .icon i {
+    color: var(--hover-blue);
+  }
+  
+  .counter-section .counter .icon i {
+    color: var(--primary-blue);
+  }
+  
+  .icon-close, .icon-check {
+    color: var(--primary-blue);
+  }
+  
+  #gallery-section .gallery-box .overlay-box i {
+    background: var(--primary-blue);
+  }
+  
+  .blog-item .date .day,
+  .post-thumb .date .day {
+    color: var(--dark-blue);
+  }
+  
+  .blog-item .descr h3 a:hover,
+  .post-content .post-title a:hover,
+  .post-meta a:hover {
+    color: var(--hover-blue);
+  }
+  
+  blockquote {
+    background: var(--light-blue);
+  }
+  
+  .tags-area .post-tags a:hover {
+    background: var(--primary-blue);
+  }
+  
+  .reply-link,
+  #sidebar .cat-list li a:hover {
+    color: var(--primary-blue);
+  }
+  
+  #sidebar .tag a {
+    background: var(--primary-blue);
+  }
+  
+  .subscribe-inner .form-control:focus,
+  .contact-map .form-control:focus,
+  .form-control:focus {
+    border-color: var(--primary-blue);
+  }
+  
+  .contact-item .contact-info h3 {
+    color: var(--dark-blue);
+  }
+  
+  .footer-area .footer-text p a,
+  .footer-area .footer-text .nav-inline .nav-link:hover,
+  .footer-2 ul li a:hover,
+  #copyright p a:hover {
+    color: var(--primary-blue);
+  }
+  
+  a.back-to-top i {
+    background: var(--primary-blue);
+  }
+  
+  .settings {
+    color: var(--primary-blue);
+  }
+  
+  .pagination .page-item .page-link {
+    color: var(--primary-blue);
+  }
+  
+  .pagination .page-item .page-link:hover {
+    background: var(--hover-blue);
+    color: #fff;
+  }
