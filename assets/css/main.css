@@ -2399,3 +2399,355 @@ a.back-to-top:hover, a.back-to-top:focus {
   }
 }
 }
+
+/* Modern CSS Variables */
+:root {
+  --primary-color: #1a76d1;
+  --secondary-color: #f5f5f5;
+  --text-color: #333;
+  --light-text: #fff;
+  --transition: all 0.3s ease;
+  --box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Modern Navbar Styles */
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  padding: 15px 0;
+  height: 70px; /* Fixed height */
+}
+
+/* Initial transparent state for homepage */
+.navbar.navbar-transparent {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Navigation Links */
+.navbar .nav-link {
+  color: var(--primary-color) !important; /* Default color for scrolled state */
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: var(--transition);
+  position: relative;
+}
+
+/* Special styling for transparent navbar state */
+.navbar.navbar-transparent .nav-link {
+  color: #fff !important; /* White text for transparent navbar */
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar.navbar-transparent .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Active link styling */
+.navbar .nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.navbar.navbar-transparent .nav-link.active {
+  color: #fff !important;
+}
+
+/* Logo adjustments */
+.navbar-brand img.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Main banner/carousel updates */
+#main-slide .carousel-item {
+  height: 100vh;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+#main-slide .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+#main-slide .carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  padding: 0 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.95) !important; /* Always visible on mobile */
+  }
+  
+  .navbar .nav-link {
+    color: var(--text-color) !important; /* Dark text on mobile */
+  }
+  
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: var(--box-shadow);
+  }
+}
+
+/* Banner and Carousel Text Containment */
+#main-slide .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Reduced from 100% to prevent overflow */
+  max-width: 1140px; /* Match bootstrap container width */
+  padding: 0 15px;
+  text-align: center;
+}
+
+#main-slide .carousel-item .carousel-caption .heading {
+  font-size: 42px; /* Slightly reduced font size */
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 15px auto; /* Center margins */
+  max-width: 900px; /* Limit text width */
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+
+#main-slide .carousel-item .carousel-caption p {
+  font-size: 20px;
+  max-width: 800px; /* Limit text width */
+  margin: 0 auto 20px; /* Center margins */
+  word-wrap: break-word;
+}
+
+/* Button container */
+#main-slide .carousel-caption .buttons-group {
+  margin-top: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 991px) {
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-slide .carousel-caption {
+    width: 95%;
+  }
+  
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 28px;
+  }
+  
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  #main-slide .carousel-item .carousel-caption .heading {
+    font-size: 24px;
+  }
+  
+  #main-slide .carousel-item .carousel-caption p {
+    font-size: 14px;
+  }
+}
+
+/* Fix carousel and slide height */
+#main-slide {
+  position: relative;
+  overflow: hidden; /* Add this to prevent overflow */
+}
+
+#main-slide .carousel,
+#main-slide .carousel-inner,
+#main-slide .carousel-item {
+  height: 50vh; /* Change this line to set a specific height */
+  min-height: 60px; /* And/or adjust this minimum height */
+  max-height: 400px; /* And/or adjust this maximum height */
+}
+
+#main-slide .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures image covers the area without distortion */
+  object-position: center;
+}
+
+/* Remove any bottom margin/padding that might cause the gray space */
+#main-slide .carousel-inner {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Ensure next section starts immediately after */
+.section-padding {
+  padding: 80px 0;
+  margin-top: 0;
+}
+
+/* If you have a specific section after the slider, target it directly */
+#about {  /* or whatever section follows the slider */
+  margin-top: 0;
+  padding-top: 80p60
+}
+
+/* Important Dates Icon Styling */
+.price-block-wrapper .icon {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background: rgba(26, 118, 209, 0.1);
+  transition: all 0.3s ease;
+}
+
+.price-block-wrapper:hover .icon {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.price-block-wrapper {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.price-block-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.price-block-wrapper .colmun-title h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.price-block-wrapper .price h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.price-block-wrapper .price p {
+  font-size: 18px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Registration Form Collapse Styles */
+.collapse {
+  transition: all 0.3s ease;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+/* Registration Form Styles */
+.registration-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Styles */
+[data-toggle="collapse"] {
+  position: relative;
+  padding: 12px 30px;
+}
+
+[data-toggle="collapse"]:after {
+  content: '\e9c5'; /* LineIcons chevron-down */
+  font-family: 'LineIcons';
+  position: relative;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+[data-toggle="collapse"][aria-expanded="true"]:after {
+  transform: rotate(180deg);
+}
+
+/* Form Animation */
+.registration-form {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
