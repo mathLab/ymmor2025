@@ -2751,3 +2751,38 @@ body {
     opacity: 1;
   }
 }
+
+/* Add these new styles for the Coming Soon sections */
+.coming-soon-wrapper {
+  background: #fff;
+  padding: 50px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.coming-soon-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.coming-soon-wrapper .icon {
+  font-size: 4rem;
+  color: #1a76d1;
+  margin-bottom: 20px;
+}
+
+.coming-soon-wrapper h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.coming-soon-wrapper p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
