@@ -643,7 +643,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
+  color: #212121;  /* Default black color for desktop */
   padding: 0 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -654,6 +654,16 @@ a.back-to-top:hover, a.back-to-top:focus {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
+}
+
+/* Add this new class for unscrolled state */
+.navbar-transparent .navbar-nav .nav-link {
+  color: #212121 !important;  /* Black text when unscrolled */
+}
+
+/* When scrolled, revert to original styling */
+.top-nav-collapse .navbar-nav .nav-link {
+  color: #212121 !important;
 }
 
 .navbar-expand-lg .navbar-nav li > a:before {
@@ -2433,18 +2443,18 @@ body {
   box-shadow: none;
 }
 
-/* Navigation Links */
+/* Navigation Links - Base Styles */
 .navbar .nav-link {
-  color: var(--primary-color) !important; /* Default color for scrolled state */
+  color: #212121 !important; /* Default black color */
   font-weight: 500;
   padding: 0.5rem 1rem !important;
   transition: var(--transition);
   position: relative;
 }
 
-/* Special styling for transparent navbar state */
+/* Special styling for transparent navbar state - Override to keep black */
 .navbar.navbar-transparent .nav-link {
-  color: #fff !important; /* White text for transparent navbar */
+  color: #212121 !important; /* Keep black text for transparent navbar */
 }
 
 /* Hover effect */
@@ -2453,7 +2463,7 @@ body {
 }
 
 .navbar.navbar-transparent .nav-link:hover {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: var(--primary-color) !important; /* Blue on hover */
 }
 
 /* Active link styling */
@@ -2463,7 +2473,7 @@ body {
 }
 
 .navbar.navbar-transparent .nav-link.active {
-  color: #fff !important;
+  color: var(--primary-color) !important; /* Blue for active state */
 }
 
 /* Logo adjustments */
@@ -2785,4 +2795,42 @@ body {
   font-size: 1.1rem;
   color: #666;
   margin-bottom: 0;
+}
+
+/* Update the mobile navigation styles */
+@media (max-width: 991px) {
+  .navbar {
+    background: rgba(255, 255, 255, 0.98) !important; /* Always solid background on mobile */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav .nav-link {
+    color: #212121 !important; /* Always dark text on mobile */
+    padding: 12px 20px !important;
+    border-radius: 4px;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3 !important;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98) !important; /* Always solid background */
+    padding: 20px;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    transform: translateY(-100%);
+    transition: all 0.2s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-collapse.show {
+    transform: translateY(0);
+  }
 }
