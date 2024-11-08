@@ -137,6 +137,29 @@
     window.addEventListener('scroll', updateNavbar);
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    // Close mobile menu when clicking a link
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 992) {
+                bootstrap.Collapse.getInstance(navCollapse).hide();
+            }
+        });
+    });
+
+    // Handle iOS vh units
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    window.addEventListener('resize', () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  });
+
   // Add active class to nav items based on scroll position
   window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
