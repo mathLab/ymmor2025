@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <!-- Add this in the <head> section -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Add this in the <head> section, after your other CSS links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   </head>
   <body>
@@ -44,11 +46,10 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link active" href="#header-wrap">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#schedules">Program</a></li>
-              <li class="nav-item"><a class="nav-link" href="#venue">Venue</a></li>
               <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
-              <li class="nav-item"><a class="nav-link" href="#accommodation">Accommodation</a></li>
-              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="#schedules">Program</a></li>
+              <li class="nav-item"><a class="nav-link" href="#venue">Venue & Accommodation</a></li>
+              <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -98,7 +99,7 @@
     <!-- Coundown Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="section-padding">
+    <section id="about" class="section-padding bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -155,29 +156,22 @@
           <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
             <div class="counter wow fadeInRight" data-wow-delay="0.6s">
               <div class="icon"><i class="lni-timer"></i></div>
-              <p>May 4-9, 2025</p>
-              <span>Six Full Days</span>
+              <p>May 5-9, 2025</p>
+              <span>Five Full Days</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
             <div class="counter wow fadeInRight" data-wow-delay="0.9s">
               <div class="icon"><i class="lni-users"></i></div>
-              <p>Limited Seats Available</p>
-              <span>Register Early</span>
+              <p>Limited Participants</p>
+              <span>Register early, the number of participants is restricted (up to 40)</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
             <div class="counter wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon"><i class="lni-coffee-cup"></i></div>
-              <p>Included Benefits</p>
-              <span>Coffee Breaks & Social Events</span>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
-            <div class="counter wow fadeInRight" data-wow-delay="1.5s">
               <div class="icon"><i class="lni-ticket-alt"></i></div>
-              <p>FREE</p>
-              <span>Registration</span>
+              <p>FREE Registration</p>
+              <span>Lunch, coffee breaks and a conference dinner will be free of charge for all participants.</span>
             </div>
           </div>
         </div>
@@ -186,7 +180,7 @@
     <!-- Counter Area End-->
 
     <!-- Important Dates Section -->
-    <section id="important-dates" class="section-padding">
+    <section id="important-dates" class="section-padding bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -247,7 +241,7 @@
                 <h5>Conference Dates</h5>
               </div>
               <div class="price">
-                <h2>May 4-9</h2>
+                <h2>May 5-9</h2>
                 <p>2025</p>
               </div>
             </div>
@@ -257,165 +251,8 @@
     </section>
 
     <!-- Rest of the sections (Venue, Registration, etc.) would continue here -->
-
-
-    <!-- JavaScript files remain the same as in original template -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-  </body>
-</html>
-
-    <!-- Ask Question Section Start -->
-    <section id="faq" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Ask Question?</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Global Grand Event on Digital Design</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-            <div class="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="lni-pencil"></i> How to make a new event?
-                  </div>
-                </div>
-                <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
-                      <i class="lni-pencil"></i>  Which payment methods do you accept?
-                    </div>
-                </div>
-                <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
-                    <i class="lni-pencil"></i>  Which document can i bring to meeting?
-                  </div>
-                </div>
-                <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
-                   <i class="lni-pencil"></i> Who can join at the live event venue?
-                  </div>
-                </div>
-                <div id="questionFour" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-            <div class="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne2">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="lni-pencil"></i> How to make a new event?
-                  </div>
-                </div>
-                <div id="questionOne2" class="collapse" aria-labelledby="headingOne" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo2">
-                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
-                      <i class="lni-pencil"></i>  Which payment methods do you accept?
-                    </div>
-                </div>
-                <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
-                    <i class="lni-pencil"></i>How to set price?
-                  </div>
-                </div>
-                <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
-                    <i class="lni-pencil"></i>  What our price list?
-                  </div>
-                </div>
-                <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Ask Question Section End -->
-
-
-        <!-- Schedule Section Start -->
-    <section id="schedules" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Program</h1>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">
-            <div class="coming-soon-box wow fadeInUp" data-wow-delay="0.3s">
-              <i class="lni-timer" style="font-size: 48px; margin-bottom: 20px;"></i>
-              <h2>Coming Soon!</h2>
-              <p class="lead">The detailed program will be announced closer to the event date.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Schedule Section End -->
-
-
-
 <!-- Registration Section with Collapsible Form -->
-<section id="registration" class="section-padding bg-light">
+<section id="registration" class="section-padding">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
@@ -453,82 +290,298 @@
 </section>
 <!-- Registration Section End -->
 
-    <!-- Gallary Section Start -->
-    <section id="gallery" class="section-padding">
+        <!-- Schedule Section Start -->
+    <section id="schedules" class="section-padding bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Event Gallery</h1>
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Program</h1>
             </div>
           </div>
         </div>
-        <div class="row">
-          <!-- Gallery Item 1 -->
-          <div class="col-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <a class="lightbox" href="assets/img/gallery/img-1.jpg" data-lightbox-gallery="gallery">
-                <div class="img-thumb">
-                  <img class="img-fluid" src="assets/img/gallery/img-1.jpg" alt="">
-                </div>
-                <div class="overlay-box text-center">
-                  <i class="lni-plus"></i>
-                </div>
-              </a>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <div class="coming-soon-box wow fadeInUp" data-wow-delay="0.3s">
+              <i class="lni-timer" style="font-size: 48px; margin-bottom: 20px;"></i>
+              <h2>Coming Soon!</h2>
+              <p class="lead">The detailed program will be announced closer to the event date.</p>
             </div>
           </div>
-
-          <!-- Gallery Item 2 -->
-          <div class="col-md-6 col-sm-6 col-lg-4">
-            <div class="gallery-box">
-              <a class="lightbox" href="assets/img/gallery/img-2.jpg" data-lightbox-gallery="gallery">
-                <div class="img-thumb">
-                  <img class="img-fluid" src="assets/img/gallery/img-2.jpg" alt="">
-                </div>
-                <div class="overlay-box text-center">
-                  <i class="lni-plus"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- Add more gallery items following the same pattern -->
-
         </div>
       </div>
     </section>
-    <!-- Gallary Section End -->
+    <!-- Schedule Section End -->
 
-    <!-- Map Section Start -->
-    <section id="venue" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Venue Location</h1>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">SISSA - International School for Advanced Studies</p>
+
+    <!-- JavaScript files remain the same as in original template -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+        <!-- Venue & Accommodation Section Start -->
+        <section id="venue" class="section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-title-header text-center">
+                  <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Venue & Accommodation</h1>
+                  <p class="wow fadeInDown" data-wow-delay="0.2s">Conference Location and Travel Information</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="venue-map card wow fadeInUp" data-wow-delay="0.3s">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-4 col-sm-12">
-                    <div class="venue-info">
-                      <h3>SISSA</h3>
-                      <p><i class="lni-map-marker"></i> Via Bonomea, 265<br>34136 Trieste TS, Italy</p>
-                      <p><i class="lni-world"></i> <a href="https://www.sissa.it" target="_blank">www.sissa.it</a></p>
-                      <div class="venue-direction">
-                        <a href="https://www.google.com/maps/dir//SISSA" class="btn btn-common" target="_blank">
-                          <i class="lni-direction"></i> Get Directions
-                        </a>
+
+            <!-- Venue Map -->
+            <div class="row mb-5">
+              <div class="col-12">
+                <div class="venue-map card wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-12">
+                        <div class="venue-info">
+                          <h3>SISSA</h3>
+                          <p><i class="lni-map-marker"></i> Via Bonomea, 265<br>34136 Trieste TS, Italy</p>
+                          <p><i class="lni-world"></i> <a href="https://www.sissa.it" target="_blank">www.sissa.it</a></p>
+                          <div class="venue-direction">
+                            <a href="https://www.google.com/maps/dir//SISSA" class="btn btn-common" target="_blank">
+                              <i class="lni-direction"></i> Get Directions
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8 col-sm-12">
+                        <div id="map" style="height: 400px;"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-8 col-sm-12">
-                    <div id="map" style="height: 400px;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Travel Cards -->
+            <div class="row mb-5">
+              <!-- Airports Card -->
+              <div class="col-12 col-lg-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-header">
+                    <h4><i class="fa-solid fa-plane"></i> Airports</h4>
                   </div>
+                  <div class="card-body">
+                    <div class="travel-option mb-4">
+                      <h5>Trieste Airport (TRS)</h5>
+                      <p>Direct flights from:</p>
+                      <ul>
+                        <li>Rome (4 daily flights - ITA Airways)</li>
+                        <li>Milano Linate (2 daily flights - ITA Airways)</li>
+                        <li>Frankfurt (2 daily flights - Lufthansa)</li>
+                      </ul>
+                      <p><strong>Connections to city:</strong></p>
+                      <ul>
+                        <li><a href="https://www.trenitalia.com/" target="_blank">Train (Trenitalia)</a></li>
+                        <li><a href="https://www.flixbus.it/" target="_blank">FlixBus</a></li>
+                        <li><a href="https://www.goopti.com/en/" target="_blank">GO-OPTI Shuttle</a></li>
+                        <li><a href="https://www.science-bus.com/user/index.php?l=en" target="_blank">Science Bus</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="travel-option mb-4">
+                      <h5>Venice Airport (VCE)</h5>
+                      <p>Major international gateway with frequent connections.</p>
+                      <p><strong>Getting to Trieste:</strong></p>
+                      <ol>
+                        <li>Take shuttle/bus to Venezia Mestre station (20 min)</li>
+                        <li>Then choose:
+                          <ul>
+                            <li><a href="https://www.trenitalia.com/" target="_blank">Train (Trenitalia)</a></li>
+                            <li><a href="https://www.flixbus.it/" target="_blank">FlixBus</a></li>
+                            <li><a href="https://www.goopti.com/en/" target="_blank">GO-OPTI Shuttle</a></li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Local Transport Card -->
+              <div class="col-12 col-lg-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-header">
+                    <h4><i class="lni-bus"></i> Local Transportation</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="travel-option">
+                      <h5>Public Bus Service</h5>
+                      <p><strong>Line 38: City Center ↔ SISSA</strong></p>
+                      <ul>
+                        <li>Route: Piazza Oberdan ↔ SISSA</li>
+                        <li>Frequency: Every 20 minutes</li>
+                        <li>Journey time: Approximately 20-25 minutes</li>
+                        <li>Operating hours: 6:00 - 21:00</li>
+                      </ul>
+
+                      <p class="mt-4"><strong>Ticket Information:</strong></p>
+                      <ul>
+                        <li>Single ticket: €1.45 (valid for 60 minutes)</li>
+                        <li>Daily ticket: €4.35</li>
+                        <li>Purchase locations:
+                          <ul>
+                            <li>On bus (credit card only)</li>
+                            <li>Tobacco shops and newsstands in city center</li>
+                            <li>Trieste Trasporti ticket offices</li>
+                            <li>SISSA vending machines</li>
+                          </ul>
+                        </li>
+                      </ul>
+
+                      <p class="mt-4"><strong>Useful Links:</strong></p>
+                      <ul>
+                        <li><a href="https://www.triestetrasporti.it/" target="_blank">Trieste Trasporti Website</a></li>
+                        <li><a href="https://www.triestetrasporti.it/sites/default/files/attachments/Trieste_linea_38_invernale_2024_2025_23set.pdf?_gl=1*t2iad4*_up*MQ..*_ga*MTU4OTc0ODY4OC4xNzMxMDc3MDg1*_ga_HPVR177Q09*MTczMTA3NzA4NC4xLjAuMTczMTA3NzA4NC4wLjAuMA.." target="_blank"> Bus 38 Timetable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotels -->
+            <div class="row">
+              <div class="col-12">
+                <h3 class="text-center mb-4"><i class="lni-home"></i> Accommodation</h3>
+                <p class="text-center mb-3">Special rates available for SISSA visitors - mention during booking</p>
+                
+                <!-- Expandable Button -->
+                <div class="text-center">
+                  <button class="btn btn-common mb-4" type="button" data-toggle="collapse" data-target="#hotelList" aria-expanded="false" aria-controls="hotelList">
+                    <i class="lni-hotel"></i> View Hotels List
+                  </button>
+                      <!-- Collapsible Hotel List -->
+                      <div class="collapse" id="hotelList">
+                        <div class="card card-body">
+                          <div class="table-responsive">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th>Hotel</th>
+                                  <th>Location</th>
+                                  <th>Website</th>
+                                  <th>Email</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Hotel Abbazia</td>
+                                  <td>Via della Geppa 20, 34132 Trieste</td>
+                                  <td>www.hotelabbaziatrieste.it</td>
+                                  <td>info@hotelabbaziatrieste.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Albergo Alla Posta</td>
+                                  <td>Piazza Guglielmo Oberdan 1, 34122 Trieste</td>
+                                  <td>www.albergopostatrieste.it</td>
+                                  <td>info@albergopostatrieste.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Hotel Colombia</td>
+                                  <td>Via della Geppa, 18, 34132 Trieste</td>
+                                  <td>www.hotelcolombia.it</td>
+                                  <td>colombia@hotelcolombia.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Hotel Continentale</td>
+                                  <td>Via San Nicolò, 25, 34121 Trieste</td>
+                                  <td>www.continentalehotel.com</td>
+                                  <td>info@continentalehotel.com</td>
+                                </tr>
+                                <tr>
+                                  <td>Grand Hotel Duchi D'Aosta Trieste</td>
+                                  <td>Piazza dell'Unità d'Italia, 2/1, 34121 Trieste</td>
+                                  <td>www.duchi.eu</td>
+                                  <td>info@duchi.eu</td>
+                                </tr>
+                                <tr>
+                                  <td>Hotel NH Trieste</td>
+                                  <td>Corso Camillo Benso Conte di Cavour, 7, 34132 Trieste</td>
+                                  <td>www.nh-hotels.it</td>
+                                  <td>nhtrieste@nh-hotels.com</td>
+                                </tr>
+                                <tr>
+                                  <td>Hotel Milano</td>
+                                  <td>Via Carlo Ghega, 17, 34132 Trieste</td>
+                                  <td>www.hotel-milano.com</td>
+                                  <td>info@hotel-milano.com</td>
+                                </tr>
+                                <tr>
+                                  <td>Hotel Miramare</td>
+                                  <td>Viale Miramare, 325/1, 34136 Trieste</td>
+                                  <td>www.hotelmiramaretrieste.it</td>
+                                  <td>info@hotelmiramaretrieste.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Novo Hotel Impero</td>
+                                  <td>Via Sant'Anastasio, 1, 34132 Trieste</td>
+                                  <td>www.hotelimperotrieste.it</td>
+                                  <td>impero@fenicehotels.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Hotel Roma</td>
+                                  <td>Via Carlo Ghega, 7, 34132 Trieste</td>
+                                  <td>www.hotelroma-trieste.it</td>
+                                  <td>info@hotelroma-trieste.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Starhotels Savoia Excelsior Palace</td>
+                                  <td>Riva del Mandracchio, 4, 34124 Trieste</td>
+                                  <td>www.starhotels.com</td>
+                                  <td>savoiaexcelsior.ts@starhotels.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Tre Merli Beach Hotel</td>
+                                  <td>Viale Miramare, 44, 34100 Trieste</td>
+                                  <td>www.tremerlibeachhotel.com</td>
+                                  <td>info@tremerlibeachhotel.com</td>
+                                </tr>
+                                <tr>
+                                  <td>Urban Hotel Design</td>
+                                  <td>Androna Chiusa, 4, 34121 Trieste</td>
+                                  <td>www.urbanhotel.it</td>
+                                  <td>info@urbanhotel.it</td>
+                                </tr>
+                                <tr>
+                                  <td>DoubleTree by Hilton Hotel</td>
+                                  <td>Piazza della Repubblica, 1, 34122 Trieste</td>
+                                  <td>www.hiltonhotels.it</td>
+                                  <td>trsdt_res@hilton.com</td>
+                                </tr>
+                                <tr>
+                                  <td>The modernist Hotel</td>
+                                  <td>Corso Italia, 12, 34121 Trieste</td>
+                                  <td>www.themodernisthotel.it</td>
+                                  <td>info@themodernisthotel.it</td>
+                                </tr>
+                                <tr>
+                                  <td>Residence del Mare</td>
+                                  <td>Via della Madonna del Mare, 4, 34127 Trieste</td>
+                                  <td>www.residencedelmare.it</td>
+                                  <td>info@residencedelmare.it</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -536,37 +589,31 @@
         </div>
       </div>
     </section>
-    <!-- Map Section End -->
-     <!-- Add this before the closing </body> tag, after other scripts -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // SISSA coordinates
-    const sissa = [45.6609, 13.7965];
+    <!-- Venue & Accommodation Section End -->
 
-    // Initialize map
-    const map = L.map('map').setView(sissa, 15);
-
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    // Add marker for SISSA
-    const marker = L.marker(sissa).addTo(map);
-
-    // Add popup with info
-    marker.bindPopup(`
-        <div style="padding: 5px;">
-            <h5 style="margin: 0 0 5px 0;">SISSA</h5>
-            <p style="margin: 0;">Via Bonomea, 265<br>34136 Trieste TS, Italy</p>
+    <!-- Gallary Section Start -->
+    <section id="gallery" class="section-padding bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Photo Gallery</h1>
+            </div>
+          </div>
         </div>
-    `).openPopup();
-});
-</script>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <a href="gallery.html" class="btn btn-common btn-lg wow fadeInUp" data-wow-delay="0.3s">
+              <i class="lni-camera"></i> Browse Photo Gallery
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallary Section End -->
 
     <!-- Team Section Start -->
-    <section id="team" class="section-padding text-center">
+    <section id="team" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -681,7 +728,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     <!-- Sponsors Section Start -->
-    <section id="sponsors" class="section-padding">
+    <section id="sponsors" class="section-padding bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -717,6 +764,35 @@ document.addEventListener('DOMContentLoaded', function() {
     </section>
     <!-- Sponsors Section End -->
 
+    <!-- Contact Section Start -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contact Us</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Get in touch with the organizing committee</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-8 col-md-10">
+            <div class="contact-card wow fadeInUp" data-wow-delay="0.3s">
+              <div class="text-center">
+                <i class="lni-envelope" style="font-size: 48px; color: #3d60f4; margin-bottom: 20px;"></i>
+                <h3 class="mb-4">Send us an email</h3>
+                <p class="mb-4">For any questions about the conference, please don't hesitate to contact us at:</p>
+                
+                <a href="mailto:ymmor25@sissa.it" class="btn btn-common btn-lg">
+                  <i class="lni-envelope"></i> ymmor25@sissa.it
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">
       <div class="container">
@@ -732,13 +808,22 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#about">About Conference</a></li>
-              <li><a href="#program">Program</a></li>
+              <li><a href="#header-wrap">Home</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#registration">Registration</a></li>
-              <li><a href="#venue">Venue</a></li>
+              <li><a href="#schedules">Program</a></li>
+              <li><a href="#venue">Venue & Accommodation</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#team">Organizers</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
             </ul>
           </div>
-          <!-- Additional footer columns as needed -->
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+            <h3>Contact</h3>
+            <ul>
+              <li><i class="lni-envelope"></i> <a href="mailto:ymmor25@sissa.it">ymmor25@sissa.it</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
@@ -844,5 +929,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     </script>
+
+
   </body>
 </html>
