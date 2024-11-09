@@ -138,26 +138,44 @@
   });
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Close mobile menu when clicking a link
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    const navCollapse = document.querySelector('.navbar-collapse');
     
+    // Handle menu item clicks
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth < 992) {
-                bootstrap.Collapse.getInstance(navCollapse).hide();
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 992) { // Only on mobile
+          // Close the menu
+          navbarCollapse.classList.remove('show');
+          // Update toggler state
+          navbarToggler.classList.add('collapsed');
+          navbarToggler.setAttribute('aria-expanded', 'false');
+          
+          // Smooth scroll to section after menu closes
+          const targetId = link.getAttribute('href');
+          if (targetId && targetId.startsWith('#')) {
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+              setTimeout(() => {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+              }, 300); // Wait for menu animation to complete
             }
-        });
+          }
+        }
+      });
     });
 
-    // Handle iOS vh units
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-    window.addEventListener('resize', () => {
-        const vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
+    // Remove any automatic collapse behaviors
+    if (navbarToggler) {
+      navbarToggler.addEventListener('click', function(e) {
+        e.preventDefault();
+        navbarCollapse.classList.toggle('show');
+        this.classList.toggle('collapsed');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+      });
+    }
   });
 
   // Add active class to nav items based on scroll position
