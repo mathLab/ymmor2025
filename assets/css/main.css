@@ -2408,6 +2408,7 @@ a.back-to-top:hover, a.back-to-top:focus {
     padding-bottom: 100px;  /* Less padding on mobile devices */
   }
 }
+}
 
 /* Modern CSS Variables */
 :root {
@@ -2796,7 +2797,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Update the mobile navigation styles */
+/* Update mobile navigation styles */
 @media (max-width: 991px) {
   /* Optimize navbar positioning */
   .navbar {
@@ -2818,9 +2819,11 @@ body {
     padding: 20px;
     max-height: calc(100vh - 70px);
     overflow-y: auto;
-    transition: all 0.3s ease;
+    transform: translateY(-150%); /* Start from above */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Remove opacity and visibility properties */
+    will-change: transform;
+    -webkit-overflow-scrolling: touch;
   }
 
   .navbar-collapse.show {
@@ -2834,55 +2837,25 @@ body {
   }
 
   .navbar-nav .nav-item {
-    opacity: 1; /* Remove fade animation */
-    transform: none; /* Remove transform */
-    transition: background-color 0.2s ease; /* Only transition background color */
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  .navbar-collapse.show .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease;
   }
 
   .navbar-nav .nav-link {
     padding: 12px 20px !important;
     margin: 4px 0;
     border-radius: 4px;
+    transition: background-color 0.2s ease;
   }
-}
 
-/* Update the navbar collapse styles */
-.navbar-collapse {
-  transition: transform 0.3s ease-out;
-  transform: translateY(-100%);
-}
-
-.navbar-collapse.show {
-  transform: translateY(0);
-}
-
-/* Remove the opacity transitions */
-.navbar-collapse {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.98);
-  padding: 20px;
-  max-height: calc(100vh - 70px);
-  overflow-y: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Remove opacity and visibility properties */
-}
-
-/* Update nav item animations */
-.navbar-nav .nav-item {
-  opacity: 1; /* Remove fade animation */
-  transform: none; /* Remove transform */
-  transition: background-color 0.2s ease; /* Only transition background color */
-}
-
-/* Remove the slideIn animation */
-@keyframes slideIn {
-  /* Remove this animation entirely */
-}
-
-.navbar-collapse.show .nav-item {
-  animation: none; /* Remove the animation */
-}
+  /* Remove any existing animations that might cause lag */
+  .fadeInUpMenu {
+    animation: none;
+  }
 }
