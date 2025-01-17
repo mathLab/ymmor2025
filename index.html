@@ -46,7 +46,6 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item" style="--item-number: 1"><a class="nav-link active" href="#header-wrap">Home</a></li>
               <li class="nav-item" style="--item-number: 2"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item" style="--item-number: 3"><a class="nav-link" href="#registration">Registration</a></li>
               <li class="nav-item" style="--item-number: 4"><a class="nav-link" href="#schedules">Program</a></li>
               <li class="nav-item" style="--item-number: 5"><a class="nav-link" href="#venue">Venue & Accommodation</a></li>
               <li class="nav-item" style="--item-number: 6"><a class="nav-link" href="#gallery">Gallery</a></li>
@@ -66,7 +65,6 @@
               <h1 class="wow fadeInDown heading" data-wow-delay=".4s">Young Mathematicians in Model Order Reduction Conference</h1>
               <p class="fadeInUp wow" data-wow-delay=".6s">May 5-9, 2025 in Trieste, Italy</p>
               <div class="buttons-group">
-                <a href="#registration" class="fadeInLeft wow btn btn-common btn-lg" data-wow-delay=".6s">Register Now</a>
                 <a href="#about" class="fadeInRight wow btn btn-border btn-lg" data-wow-delay=".6s">Learn More</a>
               </div>
             </div>
@@ -91,7 +89,6 @@
             <div class="row time-countdown justify-content-center wow fadeInUp" data-wow-delay="0.2s">
               <div id="clock" class="time-count"></div>
             </div>
-            <a href="#registration" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">Register Now</a>
           </div>
         </div>
       </div>
@@ -228,8 +225,8 @@
           <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
             <div class="counter wow fadeInRight" data-wow-delay="0.9s">
               <div class="icon"><i class="lni-users"></i></div>
-              <p>Limited Participants</p>
-              <span>Register early, the number of participants is restricted (up to 40)</span>
+              <p>Registration Closed</p>
+              <span>The registration period has ended</span>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 col-xs-12 work-counter-widget text-center">
@@ -254,36 +251,22 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
             <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s">
               <div class="icon">
                 <i class="lni-calendar"></i>
               </div>
               <div class="colmun-title">
-                <h5>Registration Opens</h5>
+                <h5>Registration Status</h5>
               </div>
               <div class="price">
-                <h2>Nov 18</h2>
-                <p>2024</p>
+                <h2>Closed</h2>
+                <p>Registration period has ended</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="lni-timer"></i>
-              </div>
-              <div class="colmun-title">
-                <h5>Registration Deadline</h5>
-              </div>
-              <div class="price">
-                <h2>Jan 15</h2>
-                <p>2025</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-4">
             <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.4s">
               <div class="icon">
                 <i class="lni-envelope"></i>
@@ -297,7 +280,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-4">
             <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.5s">
               <div class="icon">
                 <i class="lni-flag"></i>
@@ -316,38 +299,16 @@
     </section>
 
     <!-- Rest of the sections (Venue, Registration, etc.) would continue here -->
-<!-- Registration Section with Collapsible Form -->
+<!-- Registration Section with Closed Notice -->
 <section id="registration" class="section-padding">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
         <h2 class="section-title">Registration</h2>
-        <button class="btn btn-common mb-4" type="button" data-toggle="collapse" data-target="#registrationForm" aria-expanded="false" aria-controls="registrationForm">
-          <i class="lni-pencil"></i> Click to Register
-        </button>
-      </div>
-
-      <div class="col-lg-8">
-        <div class="collapse" id="registrationForm">
-          <div class="registration-card">
-            <!-- Download Template Button - Prominent placement -->
-            <div class="text-center mb-4">
-              <a href="assets/templates/ymmor2025_abstract.zip" class="btn btn-primary btn-lg" download>
-                <i class="lni-download"></i> Download Abstract Template
-              </a>
-              <p class="mt-3">Please download the template, prepare your abstract, and include it in your registration email.</p>
-            </div>
-
-            <!-- Email Registration Button -->
-            <div class="text-center mt-4">
-              <a href="mailto:ymmor25@sissa.it?subject=YMMOR%202025%20Registration&body=Dear%20Organizers%2C%0A%0APlease%20find%20my%20registration%20details%20below%3A%0A%0AFull%20Name%3A%0AInstitution%3A%0AAcademic%20Status%20(PhD%2FMaster%20Student%2FPostDoc%2FOther)%3A%0A%0AThank%20you."
-                 class="btn btn-common btn-lg">
-                <i class="lni-envelope"></i> Send Registration Email
-              </a>
-              <p class="mt-3">Click the button above to open your email client with a pre-filled registration template.<br>
-                <strong>Don't forget to attach your abstract (PDF format and latex source tex file) before sending!</strong></p>
-            </div>
-          </div>
+        <div class="alert alert-info mt-4 mb-4 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px; margin: auto;">
+          <i class="lni-close" style="font-size: 24px; margin-right: 10px;"></i>
+          <strong>Registration is now closed</strong>
+          <p class="mb-0 mt-2">Thank you for your interest. The registration period for YMMOR 2025 has ended.</p>
         </div>
       </div>
     </div>
