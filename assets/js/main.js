@@ -1,6 +1,6 @@
 (function($) {
-  
-  "use strict";  
+
+  "use strict";
 
   $(window).on('load', function() {
 
@@ -20,7 +20,7 @@
     /* ==========================================================================
        countdown timer
        ========================================================================== */
-     jQuery('#clock').countdown('2025/05/04',function(event){
+     jQuery('#clock').countdown('2025/05/05',function(event){
       var $this=jQuery(this).html(event.strftime(''
       +'<div class="time-entry days"><span>%-D</span> Days</div> '
       +'<div class="time-entry hours"><span>%H</span> Hours</div> '
@@ -45,17 +45,17 @@
     });
     wow.init();
 
-    /* Nivo Lightbox 
+    /* Nivo Lightbox
     ========================================================*/
     $('.lightbox').nivoLightbox({
         effect: 'fadeScale',
         keyboardNav: true,
       });
 
-    // one page navigation 
+    // one page navigation
     $('.navbar-nav').onePageNav({
             currentClass: 'active'
-    }); 
+    });
 
     /* Back Top Link active
     ========================================================*/
@@ -77,7 +77,7 @@
         return false;
       });
 
-  });      
+  });
 
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -121,7 +121,7 @@
   // Navbar transparency handling
   document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
-    
+
     function updateNavbar() {
         if (window.scrollY > 50) {
             navbar.classList.remove('navbar-transparent');
@@ -129,10 +129,10 @@
             navbar.classList.add('navbar-transparent');
         }
     }
-    
+
     // Initial check
     updateNavbar();
-    
+
     // Update on scroll
     window.addEventListener('scroll', updateNavbar);
   });
@@ -141,7 +141,7 @@
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    
+
     // Handle menu item clicks
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
@@ -151,7 +151,7 @@
           // Update toggler state
           navbarToggler.classList.add('collapsed');
           navbarToggler.setAttribute('aria-expanded', 'false');
-          
+
           // Smooth scroll to section after menu closes
           const targetId = link.getAttribute('href');
           if (targetId && targetId.startsWith('#')) {
@@ -182,16 +182,16 @@
   window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         if (window.pageYOffset >= sectionTop - 60) {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href').substring(1) === current) {
